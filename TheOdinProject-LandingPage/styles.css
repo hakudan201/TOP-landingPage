@@ -1,8 +1,26 @@
+/* Global Styles */
 body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+button {
+    background-color: #3882F6;
+    font-weight: 800;
+    color: #F9FAF8;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Header Section */
 .header {
     background-color: #1F2937;
     padding: 20px 200px 60px;
@@ -16,6 +34,10 @@ body {
     justify-content: space-between;
 }
 
+.navbar ul{
+    list-style-type: none;
+}
+
 .header-logo-text {
     font-size: 24px;
     color: #F9FAF8;
@@ -26,10 +48,7 @@ body {
     gap: 20px;
 }
 
-a {
-    text-decoration: none;
-}
-
+/* Hero Section */
 .hero-main {
     display: flex;
     gap: 32px;
@@ -41,13 +60,7 @@ a {
 
 .hero-main img {
     object-fit: cover;
-    width: 500px;
-}
-
-a,
-.hero-secondary-text {
-    font-size: 18px;
-    color: #E5E7EB;
+    width: 560px;
 }
 
 .hero-main-text {
@@ -56,15 +69,12 @@ a,
     font-weight: 800;
 }
 
-button {
-    background-color: #3882F6;
-    font-weight: 800;
-    color: #F9FAF8;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 8px;
+.hero-secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
+/* Section 1 - Card Section */
 .section1 {
     text-align: center;
     margin: 50px 0;
@@ -72,14 +82,15 @@ button {
 
 .section1-header {
     font-size: 36px;
-    color: 1F2937;
+    color: #1F2937;
     font-weight: 900;
 }
 
 .card-section {
     display: flex;
-    justify-content: space-between;
-    margin: 40px 20%;
+    justify-content: center;
+
+    margin: 40px auto;
 }
 
 .card-info {
@@ -95,9 +106,12 @@ button {
     border-radius: 12px;
 }
 
+/* Section 2 - Quote */
 .section2 {
     padding: 50px 20%;
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
 }
 
 .quote {
@@ -114,6 +128,7 @@ button {
     color: #1F2937;
 }
 
+/* Section 3 - Call to Action */
 .section3 {
     display: flex;
     justify-content: space-around;
@@ -135,10 +150,15 @@ button {
 }
 
 .section3 button {
-    border: solid 1px #F9FAF8;
+    border: solid 2px #F9FAF8;
+    padding: 0 20px;
+    margin: 40px 0;
+    font-size: 16px;
+    flex-shrink: 0;
 }
 
-.footer{
+/* Footer */
+.footer {
     background-color: #1F2937;
     padding: 30px;
     text-align: center;
